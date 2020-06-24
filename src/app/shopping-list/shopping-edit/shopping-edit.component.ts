@@ -11,7 +11,7 @@ import { ShoppingListService } from '../shopping-list.service';
   styleUrls: ['./shopping-edit.component.css']
 })
 export class ShoppingEditComponent implements OnDestroy, OnInit {
-  @ViewChild('form', {static: false}) formRef: NgForm;
+  @ViewChild('form') formRef: NgForm;
   subscription: Subscription;
   editedItemIndex: number;
   editMode = false;
