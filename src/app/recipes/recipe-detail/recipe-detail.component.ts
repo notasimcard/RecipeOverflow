@@ -34,7 +34,6 @@ export class RecipeDetailComponent implements OnInit {
       map(recipesState => recipesState.recipes[this.recipeIndex]))
       .subscribe(recipe => {
         this.recipe = recipe;
-        console.log(recipe);
       });
   }
 
